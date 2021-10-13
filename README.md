@@ -5,9 +5,10 @@ Le snake, en Python.
 
 Copiez votre fichier `snake.py` dans ce repository. Puis, créez un commit et pushez. Vous aurez les résultats sur Github.
 
-```
+```shell
 $ git add snake.py
-$ git commit --message 'Mon jeu, version 0'
+$ # ajoutez aussi tout autre fichier que vous voulez committer
+$ git commit --message "Mon jeu, version 1"
 $ git push
 ```
 
@@ -17,7 +18,7 @@ Règles:
 
 ## Exécuter les tests localement
 
-```
+```shell
 $ python -m unittest -vv
 ```
 
