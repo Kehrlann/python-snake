@@ -3,7 +3,7 @@
     {
       "name": "Le fichier existe",
       "setup": "",
-      "run": "python3 -m unittest TestSnake.test_file_exists",
+      "run": "python3 -m unittest test_snake.TestSnake.test_file_exists",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -13,7 +13,7 @@
     {
       "name": "Le formattage est correct (le fichier est \"parse-able\")",
       "setup": "",
-      "run": "python3 -m unittest TestSnake.test_parses",
+      "run": "python3 -m unittest test_snake.TestSnake.test_parses",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -23,7 +23,7 @@
     {
       "name": "Le fichier importe pygame",
       "setup": "",
-      "run": "python3 -m unittest TestSnake.test_has_pygame",
+      "run": "python3 -m unittest test_snake.TestSnake.test_has_pygame",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -33,7 +33,7 @@
     {
       "name": "Le fichier lance un jeu de snake (ou presque)",
       "setup": "",
-      "run": "python3 -m unittest TestSnake.test_runs",
+      "run": "python3 -m unittest test_snake.TestSnake.test_runs",
       "input": "",
       "output": "",
       "comparison": "included",
