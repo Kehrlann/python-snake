@@ -19,7 +19,7 @@ Règles:
 ## Exécuter les tests localement
 
 ```shell
-$ python -m unittest -vv
+$ python grader.py
 ```
 
 Si les tests ne finissent jamais, appuyez sur `Ctrl + C` pour interrompre.
