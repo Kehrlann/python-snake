@@ -1,9 +1,10 @@
-import unittest
-import os
 import ast
-from unittest.mock import patch, ANY, Mock
-import types
+import os
 import sys
+import types
+import unittest
+from unittest.mock import ANY, MagicMock, Mock, patch
+
 
 class TestSnake(unittest.TestCase):
     def test_file_exists(self):
@@ -27,7 +28,7 @@ class TestSnake(unittest.TestCase):
                     "Le fichier snake.py ne contient pas un script python valide...")
 
     def test_runs(self):
-        pygame = types.ModuleType('pygame')
+        pygame = MagicMock()
         pygame.init = Mock()
         pygame.display = Mock()
         pygame.display.set_mode = Mock()
