@@ -1,7 +1,6 @@
 import ast
 import os
 import sys
-import types
 import unittest
 from unittest.mock import ANY, MagicMock, Mock, patch
 
