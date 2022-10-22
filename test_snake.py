@@ -39,7 +39,14 @@ class TestSnake(unittest.TestCase):
         pygame.init = Mock()
         pygame.display = Mock()
         pygame.display.set_mode = Mock()
+        # Make sure that the "while" loop is not executed
+        pygame.display.set_mode.side_effect = Exception("stop run")
         sys.modules['pygame'] = pygame
+        # Stuff that could be imported and would make the test fail
+        sys.modules['pygame.constants'] = Mock()
+        sys.modules['pygame.time'] = Mock()
+        sys.modules['pygame.event'] = Mock()
+        sys.modules['pygame.draw'] = Mock()
         try:
             import snake
         except:
