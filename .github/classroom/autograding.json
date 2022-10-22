@@ -20,6 +20,16 @@
       "timeout": 1,
       "points": 1
     },
+   {
+      "name": "Le fichier n'importe pas numpy",
+      "setup": "",
+      "run": "python3 -m unittest test_snake.TestSnake.test_does_not_have_numpy",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
     {
       "name": "Le fichier importe pygame",
       "setup": "",
